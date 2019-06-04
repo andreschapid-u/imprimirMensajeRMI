@@ -12,9 +12,11 @@
 >   -   sop_rmi
 >       -   Xxxx**Imp.java**
 >       -   Xxxx**Int.java**
+>   
+>   Tener en cuenta que todos los metodos de la interfaz deven tener **throws RemoteException**
 ### 3. Compilar los soportes >> **sop_rmi**
->   En la raiz del proyecto ejecutar
->   -   **javac -d bin/ src/\*/*.java**
+>   En el directorio **src** del proyecto ejecutar
+>   -   **javac -d ../bin sop_rmi/*.java**
 >       
 >    Esto va a generar los binarios de los fuentes que estan en **sop_rmi**
 
@@ -37,9 +39,9 @@
 
 ### 7.Compilar los fuentes de servidor y cliente desde **src**
 >   -   Para el servidor:
->       -   **javac -d ../bin/ servidor/*.java**
+>       -   **javac -d ../bin servidor/*.java**
 >   -   Para el cliente:
->       -   **javac -d ../bin/ cliente/*.java**
+>       -   **javac -d ../bin cliente/*.java**
 
 ### 8.Lanzamos el N_S
 >   -   Ubicados en bin. Por defecto el puerto es 1099 si queremos lo podemos modificar, es opcional
